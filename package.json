@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node  --perf-basic-prof-only-functions --track_gc_object_stats --trace_gc_verbose --log_timer_events  --track-heap-objects  --trace-events-enabled  ./bin/www",
-    "app": "node --inspect ./bin/www"
+    "app": "node --inspect ./bin/www",
+    "perf":"perf record -e cycles:u -g -- node --perf-basic-prof ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
