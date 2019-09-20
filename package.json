@@ -1,0 +1,17 @@
+{
+  "name": "express-web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node  --perf-basic-prof-only-functions --track_gc_object_stats --trace_gc_verbose --log_timer_events  --track-heap-objects  --trace-events-enabled  ./bin/www",
+    "app": "node --inspect ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
+}
